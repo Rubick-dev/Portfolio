@@ -1,0 +1,19 @@
+.jumbotron {
+  background: no-repeat center url("images/wave1.png");
+  background-size: cover;
+	background-position: center;
+}
+
+.display-1 {
+  font-family: 'Russo One', sans-serif;
+}
+
+.lead {
+  /* color:rgb(21, 21, 148); */
+  text-align: left;
+  font-family: 'Russo One', sans-serif;
+}
+
+.navbar {
+  font-family: 'Russo One', sans-serif; 
+}

@@ -1,7 +1,11 @@
 .jumbotron {
   background: no-repeat center url("images/wave1.png");
   background-size: cover;
-	background-position: center;
+  background-position: center;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  margin-bottom: 0;
+  border-top: 3px solid black;
 }
 
 .display-1 {
@@ -12,8 +16,34 @@
   /* color:rgb(21, 21, 148); */
   text-align: left;
   font-family: 'Russo One', sans-serif;
+  padding-bottom: 0;
+  margin-bottom: 0;
+
 }
 
 .navbar {
   font-family: 'Russo One', sans-serif; 
+}
+
+.about {
+  background-color: #b4cfe2;
+  margin-top: 0;
+  padding-top: 0;
+  border-top: 3px solid rgb(19, 18, 18);
+    font-family: 'Russo One', sans-serif;
+}
+
+.aboutme-head {
+  padding-top: 100px;
+  text-align: center;
+}
+
+/* .hobbies {
+  margin-left: 5%;
+  margin-right: 5%;
+}*/
+
+.bio {
+  padding-left: 10%;
+  padding-right: 10%;
 }

@@ -5,7 +5,6 @@
   padding-top: 150px;
   padding-bottom: 150px;
   margin-bottom: 0;
-  border-top: 3px solid black;
 }
 
 .display-1 {
@@ -22,7 +21,8 @@
 }
 
 .navbar {
-  font-family: 'Russo One', sans-serif; 
+  font-family: 'Russo One', sans-serif;
+  border-bottom: 3px solid rgb(19, 18, 18); 
 }
 
 .about {
@@ -30,20 +30,43 @@
   margin-top: 0;
   padding-top: 0;
   border-top: 3px solid rgb(19, 18, 18);
-    font-family: 'Russo One', sans-serif;
+  font-family: 'Russo One', sans-serif;
 }
 
 .aboutme-head {
   padding-top: 100px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+.hobbies-head {
+  padding-top: 60px;
+  padding-bottom: 40px;
   text-align: center;
 }
 
-/* .hobbies {
-  margin-left: 5%;
-  margin-right: 5%;
-}*/
+.projects-head {
+  padding-top: 60px;
+  padding-bottom: 40px;
+  text-align: center;
+  font-family: 'Russo One', sans-serif;
+}
+
+.projects {
+  border-top: 3px solid rgb(19, 18, 18);
+  background-color: #105d94;
+}
 
 .bio {
   padding-left: 10%;
   padding-right: 10%;
 }
+
+body {
+  padding-top: 75px;
+}
+
+.navbar {
+  background-color: #b4cfe2;
+}
+
+/* @media - this needs to be inplemented for the flexbox potentially */

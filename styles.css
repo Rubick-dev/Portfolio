@@ -1,5 +1,23 @@
+/* -- Applies too all the page --*/
+body {
+  font-family: 'Russo One', sans-serif;
+  padding-top: 75px;
+}
+
+
+/* ---- Navbar --- */
+.navbar {
+  border-bottom: 3px solid rgb(19, 18, 18); 
+}
+
+.navbar {
+  background-color: #b4cfe2;
+}
+
+
+/* -- Jumbotron -- */
 .jumbotron {
-  background: no-repeat center url("images/wave1.png");
+  background: no-repeat center url("images/wave3.png");
   background-size: cover;
   background-position: center;
   padding-top: 150px;
@@ -7,53 +25,36 @@
   margin-bottom: 0;
 }
 
-.display-1 {
-  font-family: 'Russo One', sans-serif;
-}
-
-.lead {
-  /* color:rgb(21, 21, 148); */
+.intro-body {
   text-align: left;
-  font-family: 'Russo One', sans-serif;
   padding-bottom: 0;
   margin-bottom: 0;
-
 }
 
-.navbar {
-  font-family: 'Russo One', sans-serif;
-  border-bottom: 3px solid rgb(19, 18, 18); 
+.skills-icons {
+  padding-top: 50px;
 }
 
+/* -- About Me Section --- */
 .about {
   background-color: #b4cfe2;
   margin-top: 0;
   padding-top: 0;
+  padding-bottom: 100px;
   border-top: 3px solid rgb(19, 18, 18);
-  font-family: 'Russo One', sans-serif;
 }
 
 .aboutme-head {
   padding-top: 100px;
   padding-bottom: 20px;
   text-align: center;
+  font-size: 5rem;
 }
+
 .hobbies-head {
   padding-top: 60px;
   padding-bottom: 40px;
   text-align: center;
-}
-
-.projects-head {
-  padding-top: 60px;
-  padding-bottom: 40px;
-  text-align: center;
-  font-family: 'Russo One', sans-serif;
-}
-
-.projects {
-  border-top: 3px solid rgb(19, 18, 18);
-  background-color: #105d94;
 }
 
 .bio {
@@ -61,12 +62,148 @@
   padding-right: 10%;
 }
 
-body {
-  padding-top: 75px;
+
+/* --- Projects Section --- */
+.projects-head {
+  position: relative;
+  top:50px;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  text-align: center;
+  font-size: 5rem;
 }
 
-.navbar {
-  background-color: #b4cfe2;
+.projects {
+  border-top: 3px solid rgb(19, 18, 18);
+  background-color: #105d94;
 }
 
-/* @media - this needs to be inplemented for the flexbox potentially */
+.project-description {
+  position:relative;
+  top: 10px;
+  text-align: center;
+  color: black;
+}
+
+
+/* --- Contacts Section --- */
+
+.contacts-div {
+  border-top: 3px solid rgb(19, 18, 18);
+  background-color: #105d94;
+  height: 600px;
+}
+
+
+/* ------------------------- CSS FOR THE ------------------------- */
+/* -------------------------- CAROUSEL --------------------------- */
+
+.card-carousel-div {
+  border-top: 3px solid rgb(19, 18, 18);
+  height: 1040px;
+  background: no-repeat center url("images/wave1.png");
+  background-size: cover;
+  background-position: center;
+}
+
+#carousel {
+ /*  margin-top: 200px;
+  padding-top: 200px; */
+  position: relative;
+  height: 400px;
+  top: 30%;
+  transform: translateY(-50%);
+  overflow: hidden;
+}
+
+#carousel div {
+  position: absolute;
+  transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+  opacity: 1;
+}
+
+#carousel div img {
+  width: 400px;
+  transition: width 1s;
+}
+
+#carousel div.hideLeft {
+  left: 0%;
+  opacity: 0;
+  transform: translateY(50%) translateX(-50%);
+}
+
+#carousel div.hideLeft img {
+  width: 200px;
+}
+
+#carousel div.hideRight {
+  left: 100%;
+  opacity: 0;
+  transform: translateY(50%) translateX(-50%);
+}
+
+#carousel div.hideRight img {
+  width: 200px;
+}
+
+#carousel div.prev {
+  z-index: 5;
+  left: 30%;
+  transform: translateY(50px) translateX(-50%);
+}
+
+#carousel div.prev img {
+  width: 300px;
+}
+
+#carousel div.prevLeftSecond {
+  z-index: 4;
+  left: 15%;
+  transform: translateY(50%) translateX(-50%);
+  opacity: 0.7;
+}
+
+#carousel div.prevLeftSecond img {
+  width: 200px;
+}
+
+#carousel div.selected {
+  z-index: 10;
+  left: 50%;
+  transform: translateY(0px) translateX(-50%);
+}
+
+#carousel div.next {
+  z-index: 5;
+  left: 70%;
+  transform: translateY(50px) translateX(-50%);
+}
+
+#carousel div.next img {
+  width: 300px;
+}
+
+#carousel div.nextRightSecond {
+  z-index: 4;
+  left: 85%;
+  transform: translateY(50%) translateX(-50%);
+  opacity: 0.7;
+}
+
+#carousel div.nextRightSecond img {
+  width: 200px;
+}
+
+/* -- Carousel Button --- */
+.buttons {
+  position: relative;
+  left: 0;
+  right: 0;
+  margin: auto;
+} 
+
+#prev,
+#next {
+  border: 1px solid black;
+}

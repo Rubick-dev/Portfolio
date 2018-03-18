@@ -35,12 +35,21 @@
     </div>
   </nav> <!-- end of navbar -->
 
-  <div class="jumbotron"> <!-- Start of the jumbotron -->
+  <div class="jumbotron jumbotron-fluid"> <!-- Start of the jumbotron -->
     <div class="container">
-      <h1 class="display-1">Heath Burton</h1>
-      <p class="lead">FullStack Web Developer - Skills in HTML5 CSS3 Bootstrap4 Javascript(es5 & es6) All information displayed on this portfolio is original content, created by myself to demonstrate my progression as a web developer.</p>
+      <h1 class="display-2 intro-head">Heath Burton</h1>
+      <p class="lead intro-body">FullStack Web Developer - Skills in HTML5, CSS3, Bootstrap4, Javascript(es5 & es6) and jQuery. All information displayed on this portfolio is original content, created by myself to demonstrate my progression as a web developer.</p>
     </div>
+    <div class="row d-flex flex-row justify-content-around skills-icons">
+        <div class="hobbies p-3"><img src="images/HTML5-icon.png" width="50" height="50" alt="surfing icon"> - HTML5</div>
+        <div class="hobbies p-3"><img src="images/css3-icon.png" width="50" height="40" alt="surfing icon"> - CSS3</div>
+        <div class="hobbies p-3"><img src="images/js-icon.png" width="50" height="50" alt="surfing icon"> - JavaScript</div>
+        <div class="hobbies p-3"><img src="images/es6-icon.svg" width="50" height="50" alt="surfing icon"> - ES6</div>
+        <div class="hobbies p-3"><img src="images/bootstrap4-icon.png" width="50" height="50" alt="surfing icon"> - Bootstrap 4</div>
+        <div class="hobbies p-3"><img src="images/git-icon.png" width="50" height="50" alt="surfing icon"> - Git</div>
+      </div>
   </div> <!-- end of Jumbotron -->
+
 
   <div class="about" id="about-div"> <!-- Start of About Me sections -->
     <h1 class="aboutme-head">About Me</h1>
@@ -61,62 +70,25 @@
       <div class="hobbies p-3"><img src="images/friends-icon.png" width="50" height="50" alt="surfing icon"> - Friends</div>
     </div>
   </div> <!-- end of About me -->
-
-  <div class="projects"> <!-- Project cards -->
-    <h1 class="projects-head">My Projects</h2>
  
-    <div class="card-deck"> <!-- Start of card system -->
-      <div class="card">
-        <a href="https://tribute-thomasburton.herokuapp.com/" target="_blank"><img class="card-img-top" src="images/tribute-thumbnail.png" alt="img of a tribute page to my father"></a>
 
-        <div class="card-body">
-          <h5 class="card-title">Tribute Page</h5>
-          <p class="card-text">This site was created as a tribute to my father who tragically lost his life in a boating accident in the year 2000.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-      </div>
-
-      <div class="card">
-        <a href="https://mncbs.herokuapp.com/" target="_blank"><img class="card-img-top" src="images/mncbs-thumbnail.png" alt="Image of my first ever from the ground up website"></a>
-        <div class="card-body">
-          <h5 class="card-title">Mid North Coast Baby Sitting Service</h5>
-          <p class="card-text">This project was my first ever from the ground up 100% self built website. Incorporating HTML and CSS to make a landing page for a local business.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-      </div>
-
-      <div class="card">
-        <img class="card-img-top" src="..." alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-      </div>
-
-    </div> <!-- end of card system -->
-  </div> <!-- end of Project cards -->
-
-<br>
-<br>
-<br>
-
-  <div class="test-card-carousel">
-    <div id="carousel">
+  <div class="card-carousel-div"> <!-- Start of the card Carousel section -->
+    <h1 class="projects-head">My Projects</h2>
+    <div id="carousel"> <!-- Start of the rotating cards area of carousel-->
       <div class="hideLeft">
-        <img src="https://s16.postimg.org/vklrwoxtx/cover9.jpg">
-      </div>
-
-      <div class="prevLeftSecond">
-        <img src="https://s16.postimg.org/cgsggckzp/cover8.jpg">
-      </div>
-
-      <div class="prev">
         <img src="https://s16.postimg.org/emmrauog5/cover7.jpg">
       </div>
 
-      <div class="selected">
+      <div class="prevLeftSecond">
         <img src="https://s16.postimg.org/9drqcz611/cover1.jpg">
+      </div>
+
+      <div class="prev">
+        <a href="https://tribute-thomasburton.herokuapp.com/" target="_blank"><img src="images/tribute-thumbnail.png" alt="img of a tribute page to my father"></a>
+      </div>
+
+      <div class="selected">
+          <a href="https://mncbs.herokuapp.com/" target="_blank"><img src="images/mncbs-thumbnail.png" alt="Image of my first ever from the ground up website"></a>
       </div>
 
       <div class="next">
@@ -130,15 +102,28 @@
       <div class="hideRight">
         <img src="https://s16.postimg.org/fij8qay4l/cover3.jpg">
       </div>
-    </div> <!-- end of carousel area -->
-  
+    </div> <!-- end of rotating cards area -->
+
+    <br>
+
     <div class="buttons">
-      <button id="prev">Prev</button>
-      <button id="next">Next</button>
+      <button id="prev" class="btn-lg btn btn-outline-dark">Prev</button>
+      <button id="next" class="btn-lg btn btn-outline-dark">Next</button>
     </div> <!-- end of buttons to scroll left and right -->
+    
+    <br>
 
-</div> <!-- end of test carsousel area -->
+    <div class="project-desc-div">
+      <p class="project-description">Click on the "Next" and "Previous" button or use the "Left" or "Right" arrow keys to scroll through the list of projects I have completed. Click on the image to open the website.</p>
+    </div>
+  </div> <!-- end of the carousel section -->
 
+
+  <div class="contacts-div"> <!-- Start of the contacts area -->
+    <div class="contact-area">
+
+    </div>
+  </div>
 
 </body>
 

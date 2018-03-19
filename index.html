@@ -26,14 +26,14 @@
           <a class="nav-link ml-5" href="#about-div">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link ml-5" href="#">Projects</a>
+          <a class="nav-link ml-5" href="#my-projects">Projects</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link ml-5 mr-5" href="#">Contact</a>
+          <a class="nav-link ml-5 mr-5" href="#contact-me">Contact</a>
         </li>
       </ul>
     </div>
-  </nav> <!-- end of navbar -->
+  </nav> <!-- end of navbar --> 
 
   <div class="jumbotron jumbotron-fluid"> <!-- Start of the jumbotron -->
     <div class="container">
@@ -61,7 +61,7 @@
     <div class="container">
       <h4 class="hobbies-head">Hobbies and interests</h4>
     </div>
-    <div class="row d-flex flex-row justify-content-around">
+    <div class="row d-flex flex-row justify-content-around intmhobbs">
       <div class="hobbies p-3"><img src="images/surfboard-icon.png" width="50" height="50" alt="surfing icon"> - Surfing</div>
       <div class="hobbies p-3"><img src="images/soccerball-icon.png" width="50" height="40" alt="surfing icon"> - Football</div>
       <div class="hobbies p-3"><img src="images/dota-symbol-icon.png" width="50" height="50" alt="surfing icon"> - Dota2</div>
@@ -72,8 +72,9 @@
   </div> <!-- end of About me -->
  
 
-  <div class="card-carousel-div"> <!-- Start of the card Carousel section -->
+  <div class="card-carousel-div" id="my-projects"> <!-- Start of the card Carousel section -->
     <h1 class="projects-head">My Projects</h2>
+    
     <div id="carousel"> <!-- Start of the rotating cards area of carousel-->
       <div class="hideLeft">
         <img src="https://s16.postimg.org/emmrauog5/cover7.jpg">
@@ -104,22 +105,26 @@
       </div>
     </div> <!-- end of rotating cards area -->
 
-    <br>
-
-    <div class="buttons">
-      <button id="prev" class="btn-lg btn btn-outline-dark">Prev</button>
-      <button id="next" class="btn-lg btn btn-outline-dark">Next</button>
+    <div>
+      <div class="buttons">
+        <button id="prev" class="btn-lg btn btn-outline-dark">Prev</button>
+        <button id="next" class="btn-lg btn btn-outline-dark">Next</button>
+      </div>
+      
+      <div class="project-desc-div">
+        <p class="project-description">Click on the "Next" and "Previous" button or use the "Left" or "Right" arrow keys to scroll through the list of projects I have completed. Click on the image to open the website.</p>
+      </div>
     </div> <!-- end of buttons to scroll left and right -->
-    
-    <br>
-
-    <div class="project-desc-div">
+  
+    <!-- <div class="project-desc-div">
       <p class="project-description">Click on the "Next" and "Previous" button or use the "Left" or "Right" arrow keys to scroll through the list of projects I have completed. Click on the image to open the website.</p>
-    </div>
+    </div> -->
+
   </div> <!-- end of the carousel section -->
+  
 
 
-  <div class="contacts-div"> <!-- Start of the contacts area -->
+  <div class="contacts-div" id="contact-me"> <!-- Start of the contacts area -->
     <div class="contact-area">
 
     </div>

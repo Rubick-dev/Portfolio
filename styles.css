@@ -2,6 +2,7 @@
 body {
   font-family: 'Russo One', sans-serif;
   padding-top: 75px;
+  min-width: 315px;
 }
 
 
@@ -217,4 +218,40 @@ body {
   border-top: 3px solid rgb(19, 18, 18);
   background-color: #105d94;
   height: 600px;
+}
+
+
+/* ---- Media Queries --- */
+@media (max-width: 335px) {
+  /* -- Carousel Button --- */
+  .buttons {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10%;
+    z-index: 100;
+    width: 180px
+  } 
+
+  .project-description {
+    display: none;
+  }
+
+  #prev,
+  #next {
+    border: 1px solid black;
+    padding-left: 10%;
+  }
+
+  .projects-head {
+    font-size: 4rem;
+  }
+
+  .intro-head {
+    font-size: 4rem;
+  }
+
+  .selected {
+   
+  }
 }

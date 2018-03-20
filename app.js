@@ -26,7 +26,7 @@ function moveToSelected(element) {
 
 }
 
-// Keyboard Events
+// Events Listeners
 $(document).keydown(function(e) {
     switch(e.which) {
         case 37: // left

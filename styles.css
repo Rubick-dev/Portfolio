@@ -30,7 +30,7 @@ body {
 }
 
 .skills-icons {
-  padding-top: 50px;
+  padding-top: 100px;
   max-width: 100%;
 }
 
@@ -216,13 +216,27 @@ body {
 
 .contacts-div {
   border-top: 3px solid rgb(19, 18, 18);
-  background-color: #105d94;
+  border-bottom: 3px solid rgb(19, 18, 18);
+  background-color: #3c84b8;
   height: 600px;
+}
+
+.contact-head {
+  position: relative;
+  top: 50px;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  text-align: center;
+  font-size: 5rem;
+}
+
+.contact-icons {
+  margin-top: 80px;
 }
 
 
 /* ---- Media Queries --- */
-@media (max-width: 335px) {
+@media (max-width: 342px) {
   /* -- Carousel Button --- */
   .buttons {
     position: absolute;
@@ -243,11 +257,20 @@ body {
     padding-left: 10%;
   }
 
-  .projects-head {
-    font-size: 4rem;
-  }
-
-  .intro-head {
+  .projects-head,
+  .intro-head,
+  .contact-head {
     font-size: 4rem;
   }
 }
+
+@media (max-width:420px) {
+  .project-desc-div {
+    position: absolute;
+    bottom: -50px;
+    left: 5%;
+    right: 5%;
+    transform: translateY(-50%);
+  }
+}
+
